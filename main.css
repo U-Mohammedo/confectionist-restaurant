@@ -1,0 +1,275 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-size: 100%;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  height: 100vh;
+}
+
+.storeFront {
+  width: 100%;
+  background-image: url('pexels-ready-made-3964502.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.gallery-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 80rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  transition: all 0.25s ease-in-out;
+  text-align: center;
+}
+
+.gallery-container img {
+  object-fit: cover;
+}
+
+.previous,
+.next {
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.left-btn,
+.right-btn {
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* height: 50vh; */
+  margin-bottom: 15vh;
+  width: 65vw;
+  text-align: center;
+}
+
+.about h2 {
+  margin: 1.5em 0;
+}
+
+.about p {
+  text-align: left;
+  font-size: 1.3em;
+  color: #747474;
+  line-height: 1.35em;
+  letter-spacing: 0.3px;
+}
+
+#staff {
+  display: flex;
+  flex-direction: column;
+}
+#staff h2 {
+  margin: 15px 0 30px 0;
+  padding: 5px;
+  font-size: 1.6em;
+}
+
+.port {
+  box-shadow: 0px 5px 12px 0px rgb(0, 0, 0, 0.17);
+  background-color: #ffffff;
+  border-radius: 0.2em;
+  margin: 30px auto;
+  width: 350px;
+}
+
+.port p,
+.port h4 {
+  text-align: left;
+  padding: 10px 20px;
+  margin: 20px 0px;
+}
+
+.port p {
+  color: #444141;
+}
+
+.port h4 {
+  color: #823831;
+  text-decoration: underline;
+}
+
+.port img {
+  width: 350px;
+  height: 320px;
+  object-fit: cover;
+}
+
+section a {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #000000;
+}
+
+.feedback h3 {
+  padding: 45px 0 15px 0;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+
+#testimonials {
+  /* width: 80vw; */
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+#testimonials h3 {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 2.2em;
+}
+
+.text {
+  line-height: 1.35em;
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  color: #747474;
+}
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  line-height: 1.35em;
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  color: #747474;
+}
+
+.collab {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.collab h2 {
+  padding: 5px;
+  font-size: 1.25em;
+}
+
+.brands {
+  padding: 2em;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  margin: 0;
+}
+
+.brands span {
+  padding: 20px;
+}
+
+.brands img {
+  opacity: 0.75;
+}
+
+footer {
+  background-color: #f3f3f3;
+  padding: 80px 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+}
+
+footer p {
+  padding: 2px;
+}
+
+@media screen and (min-width: 992px) {
+  .staff-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .port {
+    margin: 40px;
+  }
+
+  .port p,
+  .port h4 {
+    text-align: left;
+    padding: 0 20px;
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (min-width: 1178px) {
+  .staff-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .port {
+    margin: 20px;
+  }
+  .port p,
+  .port h4 {
+    text-align: left;
+    padding: 0 20px;
+    margin: 20px 0px;
+  }
+  .brands {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+/* the problem it's not responsive on the ipad pro is because of the staff grid, make a new one for the ipad pro */

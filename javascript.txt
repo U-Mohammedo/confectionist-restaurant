@@ -1,0 +1,5 @@
+make a sliding picture gallery with arrows for forward and backwards, when clicked on it, make the image enlarge and also provide a forward and backward arrow for navigation.
+
+-------------------------------------------------------------------------------------------------
+
+form validation, with submitting orders to the server for orders placed.
